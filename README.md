@@ -86,11 +86,16 @@ chmod +x build.sh
 #### 06. Upload deployment assets to your Amazon S3 bucket:
 ```
 *aws s3 cp ./dist s3://$DEPLOY_BUCKET/data-lake/latest --recursive --acl bucket-owner-full-control*
+```
 
 #### Correct syntax to upload to correct bucket is this:
+```
 aws s3 cp ./dist s3://$DEPLOY_BUCKET-$AWS_REGION/data-lake/$VERSION_CODE --recursive --acl bucket-owner-full-control
+```
+or execute
 
-or execute *./upload-s3.sh*
+```
+./upload-s3.sh
 ```
 
 #### 07. Deploy the data lake solution:
