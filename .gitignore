@@ -2,3 +2,5 @@
 **/dist
 **/.zip
 **/.DS_Store
+deployment/set-vars.sh
+*.cer

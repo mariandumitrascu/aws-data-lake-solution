@@ -70,5 +70,5 @@ console.log(_manifest);
 fs.writeFile('../dist/data-lake-site-manifest.json', JSON.stringify(_manifest, null, 4), (err) => {  
     // throws an error, you could also catch it here
     if (err) throw err;
-    console.log('the file was writen succesfuly');
+    console.log('everything looks good');
 });

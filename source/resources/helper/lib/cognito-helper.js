@@ -274,7 +274,9 @@ let cognitoHelper = (function() {
         let cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
         var params = {
             ProviderDetails: {
-                'MetadataURL': `https://${adFsHostname}/FederationMetadata/2007-06/FederationMetadata.xml`,
+                // 'MetadataURL': `https://${adFsHostname}/FederationMetadata/2007-06/FederationMetadata.xml`,
+                //'MetadataURL': `https://dev-649370.okta.com/app/exk11ybjwo4AQPdxu357/sso/saml/metadata`,
+                'MetadataURL': 'https://dataquadrant.okta.com/app/exk122pi7qnSrpOfz357/sso/saml/metadata',
                 "IDPSignout": "true"
             },
             ProviderName: adFsHostname,

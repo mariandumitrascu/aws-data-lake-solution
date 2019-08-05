@@ -41,7 +41,7 @@ Mappings:
             KeyPrefix: "data-lake/%%VERSION%%"
     Solution:
         Data:
-            SendAnonymousUsageData: "No"
+            SendAnonymousUsageData: "Yes"
 
 Resources:
     DataLakeStorageStack:
